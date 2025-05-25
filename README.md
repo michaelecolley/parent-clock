@@ -15,8 +15,7 @@ A beautiful, cross-platform bedtime countdown and sleep tracker desktop app buil
 ---
 
 ## Screenshot
-
-![App Screenshot](./Screenshot%202025-05-25%20at%2009.40.22.png)
+<img src="./Screenshot%202025-05-25%20at%2009.40.22.png" alt="App Screenshot" width="50%"/>
 
 ---
 
