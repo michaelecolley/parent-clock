@@ -1,7 +1,5 @@
 # Parent Clock
 
-![Screenshot](./Screenshot%202025-05-25%20at%2009.40.22.png)
-
 A beautiful, cross-platform bedtime countdown and sleep tracker desktop app built with **React**, **Vite**, **Electron**, and **Tailwind CSS**.
 
 ## Features
