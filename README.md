@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# Parent Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot](./Screenshot%202025-05-25%20at%2009.40.22.png)
 
-Currently, two official plugins are available:
+A beautiful, cross-platform bedtime countdown and sleep tracker desktop app built with **React**, **Vite**, **Electron**, and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Live Bedtime Countdown:** See exactly how long until your next 5:00 AM wake-up.
+- **Potential Sleep Hours:** Instantly know how much sleep you can get if you go to bed now.
+- **Sleep Quality Badge:** Get a quick status (Excellent, Good, Okay, Poor) based on your potential sleep.
+- **Motivational Messages:** Encouragement and tips for healthy sleep habits.
+- **9:00 PM Countdown:** See how long until your ideal bedtime for a full 8 hours of sleep.
+- **Modern UI:** Responsive, glassy, and colorful interface with live updating timers.
+- **Electron-Powered:** Runs as a native app on macOS, Windows, and Linux.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Screenshot
+
+![App Screenshot](./Screenshot%202025-05-25%20at%2009.40.22.png)
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+```sh
+git clone https://github.com/michaelecolley/parent-clock.git
+cd parent-clock
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2. Install dependencies
+```sh
+npm install
 ```
+
+### 3. Run in development mode
+Start the Vite dev server:
+```sh
+npm run dev
+```
+In another terminal, start Electron:
+```sh
+npm run electron
+```
+
+### 4. Build and package as a desktop app
+```sh
+npm run dist
+```
+The installer/executable will be created in the `dist/` directory.
+
+---
+
+## Tech Stack
+- React 19
+- Vite
+- Electron
+- Tailwind CSS
+- TypeScript
+
+---
+
+## License
+MIT
